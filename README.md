@@ -1,2 +1,2 @@
 # reactjs-random-quote-machine
-Reactjs Random Quote Machine (Freecodecamp Project)
+Random Quote Machine in Reactjs (Freecodecamp Project)
