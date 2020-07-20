@@ -30,6 +30,7 @@ body {
     border-radius: 3px;
     font-size: 1em;
     cursor: pointer;
+    font-family: inherit;	
 }
 
 #text {
