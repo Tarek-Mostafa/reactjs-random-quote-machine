@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Quote from "./Quote";
-// import Buttons from "./Buttons";
+import Buttons from "./Buttons";
 
 export default function App() {
     const [quoteObject, setQuote ] = useState(() => {
         return {
-            quote: "",
-            author: ""
+            quote: "Remember no one can make you feel inferior without your consent.",
+            author: "Eleanor Roosevelt"
         }
     });
 
@@ -31,14 +31,7 @@ export default function App() {
         <div className="randQuotesApp">
             <div id="quote-box">
                 <Quote quoteObject={quoteObject} />
-                <div id="buttons">
-                    <div className="shareButtons">
-                        <a id="tweet-quote" href={`https://twitter.com/intent/tweet?text=${quoteObject.quote}`} target="_blank" rel="noopener noreferrer">Tweet</a>
-                    </div>
-                    <div className="actionButton">
-                        <button id="new-quote" onClick={ generateQuote }>New Quote</button>
-                    </div>
-                </div>
+                <Buttons quoteObject={quoteObject} generateQuote={ generateQuote } />
             </div>
         </div>
     )
